@@ -67,6 +67,7 @@ VariableName = value;
     - E.g., `int`, `string`, etc.
 - "Non-Primitive" Types: string, Classes, Interfaces, Structures, Enumerations
 - "Primitive" Types: int, long, byte, double, char, bool.
+- `int.MinValue`, `int.MaxValue`
 
 ## Non-Numerical Data Types
 
@@ -141,7 +142,30 @@ string title = (age < 13) ? "Child" : (age >= 13 && age <= 19) ? "Teenager" : "A
 System.Console.WriteLine(title); // adult
 ```
 
-# Control Statements
+# `switch-case`
+
+- Used to check a variable value, whether it matches with any one of the list of values.
+- Among all cases, only one will execute.
+- If all cases are not matched, it executes the "default case".
+
+```cs
+switch(variable) {
+    case value1: statement1; break;
+    case value2: statement2; break;
+    case value3: statement3; break;
+    ...
+    default: statement; break;
+}
+```
+
+
+
+
+
+
+
+
+
 
 
 
