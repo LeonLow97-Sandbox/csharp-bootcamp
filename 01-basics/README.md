@@ -256,6 +256,13 @@ static void Main(string[] args)
 }
 ```
 
+# Parse String
+
+- Converts string type to int type
+    - `int.Parse()`
+- Convert string type to Int32 type
+    - `System.Convert.ToInt32()`
+
 
 
 
