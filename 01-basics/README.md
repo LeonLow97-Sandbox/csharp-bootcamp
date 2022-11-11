@@ -80,6 +80,29 @@ VariableName = value;
     - `default(type)`
     - E.g., `default(int) = 0`
 
+# Arithmetical Operators
+
+|Operators|Description|
+|:-:|:-:|
+|+|Addition|
+|-|Subtraction|
+|*|Multiplication|
+|/|Division|
+|%|Remainder|
+|=|Assigns to|
+|+=|Add and Assigns to|
+|-=|Subtract and Assigns to|
+|*=|Multiple and Assigns to|
+|/=|Divide and Assigns to|
+|%=|Remainder Assigns to|
+
+|Increment/Decrement Operators|Description|
+|n++|Post-Increment (First it returns value, then increments)|
+|++n|Pre-Increment (First it increments value, then returns)|
+|n--|Post-Decrement (First it returns value, then decrements)|
+
+
+
 
 
 
