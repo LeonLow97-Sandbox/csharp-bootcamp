@@ -213,6 +213,18 @@ for (initialization; condition1; increment) {
 }
 ```
 
+# Nested For Loops
+
+```cs
+for (int i = 0; i < 5; i++) 
+{
+    for (int j = 0; j < 5; j++) 
+    {
+        System.Console.WriteLine(j);
+    }
+}
+```
+
 
 
 
