@@ -182,6 +182,15 @@ do
 } while (condition)
 ```
 
+# `for` loop
+
+```cs
+for (initialization; condition; increment) 
+{
+    for block
+}
+```
+
 
 
 
