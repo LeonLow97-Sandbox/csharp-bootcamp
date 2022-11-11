@@ -97,9 +97,51 @@ VariableName = value;
 |%=|Remainder Assigns to|
 
 |Increment/Decrement Operators|Description|
-|n++|Post-Increment (First it returns value, then increments)|
-|++n|Pre-Increment (First it increments value, then returns)|
-|n--|Post-Decrement (First it returns value, then decrements)|
+|:-:|:-:|
+|n++|**Post-Increment** (First it returns value, then increments)|
+|++n|**Pre-Increment** (First it increments value, then returns)|
+|n--|**Post-Decrement** (First it returns value, then decrements)|
+|--m|**Pre-Decrement** (First it decrements value, then returns)|
+
+# Comparison Operators
+
+|Operators|Description|
+|:-:|:-:|
+|==|equal to|
+|!=|not equal to|
+|<|less than|
+|>|greater than|
+|<=|less than or equal to|
+|>=|greater than or equal to|
+
+# Logical Operators
+
+|Operator|Description|
+|:-:|:-:|
+|`&&`|And (Both conditions must be true)|
+|`||`|Or (Any one of the conditions must be true)|
+|`!`|Not (Given condition will be reverse)|
+|`^`|Logical Exclusive Or - XOR (Any one operand must be true) Evaluates both operands. If both are true, returns false.|
+
+# Concatenation Operator
+
+- `+` operator
+
+# Ternary Conditional Operator
+
+```cs
+// Syntax
+(condition) ? consequent : alternative
+```
+
+```cs
+// Ternary Operator
+int age = 20;
+string title = (age < 13) ? "Child" : (age >= 13 && age <= 19) ? "Teenager" : "Adult";
+System.Console.WriteLine(title); // adult
+```
+
+
 
 
 
