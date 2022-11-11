@@ -191,6 +191,17 @@ for (initialization; condition; increment)
 }
 ```
 
+## `break` keyword
+
+```cs
+for (initialization; condition1; increment) {
+    if (condition2) {
+        break;
+    }
+    // for block code here
+}
+```
+
 
 
 

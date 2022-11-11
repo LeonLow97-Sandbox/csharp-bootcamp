@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakLoop", "BreakLoop\BreakLoop.csproj", "{F2E7CF06-B3F6-4CAF-9404-4CAC9FC13033}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2E7CF06-B3F6-4CAF-9404-4CAC9FC13033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E7CF06-B3F6-4CAF-9404-4CAC9FC13033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E7CF06-B3F6-4CAF-9404-4CAC9FC13033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E7CF06-B3F6-4CAF-9404-4CAC9FC13033}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {115C332E-62EE-4682-8EDE-8644514C55F4}
+	EndGlobalSection
+EndGlobal
