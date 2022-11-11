@@ -191,12 +191,23 @@ for (initialization; condition; increment)
 }
 ```
 
-## `break` keyword
+# `break` keyword
 
 ```cs
 for (initialization; condition1; increment) {
     if (condition2) {
         break;
+    }
+    // for block code here
+}
+```
+
+# `continue` keyword
+
+```cs
+for (initialization; condition1; increment) {
+    if (condition2) {
+        continue;
     }
     // for block code here
 }
