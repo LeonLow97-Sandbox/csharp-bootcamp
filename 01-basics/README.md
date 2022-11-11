@@ -225,6 +225,37 @@ for (int i = 0; i < 5; i++)
 }
 ```
 
+# `goto` statement
+
+```cs
+// Syntax: goto
+statement1;
+statement2;
+goto labelname;
+statement3;
+statement4;
+statement5;
+labelname: // use of colon
+statement6;
+statement7;
+```
+
+```cs
+static void Main(string[] args)
+{
+    Console.WriteLine("Singapore");
+    Console.WriteLine("Korea");
+    goto mylabel;
+    Console.WriteLine("USA");  // skip this
+    Console.WriteLine("Japan"); // skip this
+    mylabel:
+    Console.WriteLine("Nepal");
+    Console.WriteLine("Dubai");
+
+    Console.ReadKey();
+}
+```
+
 
 
 
