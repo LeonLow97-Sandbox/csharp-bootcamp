@@ -1,0 +1,8 @@
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\bin\Debug\PrimitiveType.exe.config
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\bin\Debug\PrimitiveType.exe
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\bin\Debug\PrimitiveType.pdb
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\obj\Debug\PrimitiveType.csproj.AssemblyReference.cache
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\obj\Debug\PrimitiveType.csproj.SuggestedBindingRedirects.cache
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\obj\Debug\PrimitiveType.csproj.CoreCompileInputs.cache
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\obj\Debug\PrimitiveType.exe
+C:\Users\commonuser\Desktop\csharp-masterclass\01-basics\PrimitiveType\PrimitiveType\obj\Debug\PrimitiveType.pdb

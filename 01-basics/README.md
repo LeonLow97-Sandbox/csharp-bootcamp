@@ -68,6 +68,18 @@ VariableName = value;
 - "Non-Primitive" Types: string, Classes, Interfaces, Structures, Enumerations
 - "Primitive" Types: int, long, byte, double, char, bool.
 
+## Non-Numerical Data Types
+
+- "char"
+    - default value: \0
+- "string"
+    - default value: null
+- "bool"
+    - default value: false
+- Default Literals: can get the default value of respective type using the following syntax:
+    - `default(type)`
+    - E.g., `default(int) = 0`
+
 
 
 
