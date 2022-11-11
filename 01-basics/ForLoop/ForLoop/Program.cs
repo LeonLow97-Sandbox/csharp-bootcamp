@@ -8,6 +8,15 @@ class Program
         {
             System.Console.WriteLine(i);
         }
+
+        System.Console.WriteLine();
+
+        int j = 9;
+        for (;j >= 0; j--)
+        {
+            System.Console.WriteLine(j + " ");
+        }
+
         System.Console.ReadKey();
     }
 }
