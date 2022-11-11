@@ -1,8 +1,0 @@
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\bin\Debug\Variables.exe.config
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\bin\Debug\Variables.exe
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\bin\Debug\Variables.pdb
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\obj\Debug\Variables.csproj.AssemblyReference.cache
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\obj\Debug\Variables.csproj.SuggestedBindingRedirects.cache
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\obj\Debug\Variables.csproj.CoreCompileInputs.cache
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\obj\Debug\Variables.exe
-C:\Users\commonuser\Desktop\csharp-masterclass\Variables\Variables\obj\Debug\Variables.pdb
