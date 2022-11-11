@@ -158,7 +158,29 @@ switch(variable) {
 }
 ```
 
+# `while` loop
 
+```cs
+// Syntax: while
+
+initialization;
+while (condition)
+{
+    // while block
+    increase / decrease here
+}
+```
+
+# `do-while` loop
+
+```cs
+// Syntax: do-while
+do 
+{
+    do-while block
+    increase/decrease here
+} while (condition)
+```
 
 
 
