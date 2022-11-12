@@ -21,3 +21,28 @@
         System.Console.ReadKey();
     }
 }
+
+// Child class at other assmebly
+public class InternationalProduct:Product
+{
+    public void Method1()
+    {
+        productID = 1; // inaccessible
+        productName = "abc"; // accessible
+        cost = 2000; // inaccessible
+        quantityInStock = 10; // accessible
+    }
+}
+
+// Other class at other assembly
+public class OtherClass2
+{
+    public void Method1()
+    {
+        Product product = new Product();
+        product.productID = 1; // inaccessible
+        product.productName = "abc"; // inaccessible
+        product.cost = 2000; // inaccessible
+        product.quantityInStock = 10; // accessible
+    }
+}
