@@ -8,11 +8,11 @@
 
         // Create Objects
         product1 = new Product();
-        Product.TotalNoProducts++; // 1
+        Product.SetTotalNoOfProducts(Product.GetTotalNoOfProducts() + 1); // 1
         product2 = new Product();
-        Product.TotalNoProducts++; // 2
+        Product.SetTotalNoOfProducts(Product.GetTotalNoOfProducts() + 1); // 2
         product3 = new Product();
-        Product.TotalNoProducts++; // 3
+        Product.SetTotalNoOfProducts(Product.GetTotalNoOfProducts() + 1); // 3
 
         // Initialize Fields
         product1.SetProductID(1001);
@@ -28,6 +28,26 @@
         product3.SetCost(36000);
         product3.SetQuantityInStock(800);
 
+        // Get Products
+        Console.WriteLine("---------- p1 ----------:");
+        Console.WriteLine("productID: " + product1.GetProductID());
+        Console.WriteLine("productName: " + product1.GetProductName());
+        Console.WriteLine("cost: " + product1.GetCost());
+        Console.WriteLine("quantityInStock: " + product1.GetQuantityInStock());
+
+        Console.WriteLine("\n---------- p2 ----------:");
+        Console.WriteLine("productID: " + product2.GetProductID());
+        Console.WriteLine("productName: " + product2.GetProductName());
+        Console.WriteLine("cost: " + product2.GetCost());
+        Console.WriteLine("quantityInStock: " + product2.GetQuantityInStock());
+        
+        Console.WriteLine("\n---------- p3 ----------:");
+        Console.WriteLine("productID: " + product3.GetProductID());
+        Console.WriteLine("productName: " + product3.GetProductName());
+        Console.WriteLine("cost: " + product3.GetCost());
+        Console.WriteLine("quantityInStock: " + product3.GetQuantityInStock());
+        Console.WriteLine();
+
         // Call Methods
         product1.CalculateTax();
         product2.CalculateTax();
@@ -37,7 +57,7 @@
         Console.WriteLine("Developer Name: " + developerName);
         int totalQuantity = product1.GetQuantityInStock() + product2.GetQuantityInStock() + product3.GetQuantityInStock();
         Console.WriteLine("Total Quantity: " + totalQuantity);
-        Console.WriteLine("Total no. of Products: " + Product.TotalNoProducts);
+        Console.WriteLine("Total no. of Products: " + Product.GetTotalNoOfProducts());
         Console.WriteLine("Category of Products: " + Product.CategoryName);
         Console.WriteLine("Date of Purchase of Product 1: " + product1.GetDateOfPurchase());
         Console.WriteLine("Date of Purchase of Product 2: " + product2.GetDateOfPurchase());

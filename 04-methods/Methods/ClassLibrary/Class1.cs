@@ -17,9 +17,9 @@
     }
 
     // Set method for productID
-    public void SetProductID(int value)
+    public void SetProductID(int productID)
     {
-        productID = value;
+        this.productID = productID;
     }
 
     public void SetProductName(string value)
@@ -73,6 +73,17 @@
         return dateOfPurchase;
     }
 
+    // Static Method
+    public static void SetTotalNoOfProducts(int value)
+    {
+        TotalNoProducts = value;
+    }
+
+    public static int GetTotalNoOfProducts()
+    {
+        return TotalNoProducts;
+    }
+
 
     // Method
     // Cost <= 20000 then tax = 10%
@@ -83,7 +94,7 @@
         double t;
 
         // Calculate Tax
-        if (cost <= 20000)
+        if (this.cost <= 20000)
         {
             t = cost * 10 / 100;
         } else
@@ -91,5 +102,7 @@
             t = cost * 12.5 / 100;
         }
         tax = t;
-    } 
+    }
+
+    
 }
