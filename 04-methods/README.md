@@ -35,7 +35,16 @@ accessModifier modifier returnType MethodName(parameter1, parameter2)
 - Encapsulation: **getters and setters**
     - can set logic inside these methods
 
+# Abstraction
 
+## What is Abstraction
+
+- Abstraction is the concept of providing only limited data or operations to the code existing outside of the class.
+- Concept of hiding some "private data / operations" and providing some "public data / operations" to the code outside of class.
+- Class
+    - Private Fields / Methods
+    - Public Fields / Methods
+        - Code that exist outside the class.
 
 
 
