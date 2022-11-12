@@ -2,47 +2,42 @@
 {
     static void Main()
     {
+        // Local Constant
+        const string developerName = "Leon";
+        Product product1, product2, product3;  // static fields is allocated here
+
         // Create Objects
-        Product product1; // referenceVariable
         product1 = new Product();
+        Product.TotalNoProducts++; // 1
+        product2 = new Product();
+        Product.TotalNoProducts++; // 2
+        product3 = new Product();
+        Product.TotalNoProducts++; // 3
 
         // Initialize Fields
         product1.productID = 1001;
         product1.productName = "Mobile";
         product1.cost = 20000;
         product1.quantityInStock = 1200;
+        product2.productID = 1003;
+        product2.productName = "Laptop";
+        product2.cost = 45000;
+        product2.quantityInStock = 3400;
+        product3.productID = 1003;
+        product3.productName = "Speakers";
+        product3.cost = 36000;
+        product3.quantityInStock = 800;
 
-        // Get valuees from fields
-        System.Console.WriteLine(product1.productID);
-        System.Console.WriteLine(product1.productName);
-        System.Console.WriteLine(product1.cost);
-        System.Console.WriteLine(product1.quantityInStock);
+        // Get values from fields
+        Console.WriteLine("Developer Name: " + developerName);
+        int totalQuantity = product1.quantityInStock + product2.quantityInStock + product3.quantityInStock;
+        Console.WriteLine("Total Quantity: " + totalQuantity);
+        Console.WriteLine("Total no. of Products: " + Product.TotalNoProducts);
+        Console.WriteLine("Category of Products: " + Product.CategoryName);
+        Console.WriteLine("Date of Purchase of Product 1: " + product1.dateOfPurchase);
+        Console.WriteLine("Date of Purchase of Product 2: " + product2.dateOfPurchase);
+        Console.WriteLine("Date of Purchase of Product 3: " + product3.dateOfPurchase);
 
-        System.Console.ReadKey();
-    }
-}
-
-// Child class at other assmebly
-public class InternationalProduct:Product
-{
-    public void Method1()
-    {
-        productID = 1; // inaccessible
-        productName = "abc"; // accessible
-        cost = 2000; // inaccessible
-        quantityInStock = 10; // accessible
-    }
-}
-
-// Other class at other assembly
-public class OtherClass2
-{
-    public void Method1()
-    {
-        Product product = new Product();
-        product.productID = 1; // inaccessible
-        product.productName = "abc"; // inaccessible
-        product.cost = 2000; // inaccessible
-        product.quantityInStock = 10; // accessible
+        Console.ReadKey();
     }
 }
