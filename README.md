@@ -1,3 +1,7 @@
+# Create C# Project in VS Code
+
+- `dotnet new console -o <project_name>`
+
 # .NET
 
 ## What is .NET?
