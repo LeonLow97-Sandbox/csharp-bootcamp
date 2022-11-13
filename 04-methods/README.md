@@ -272,6 +272,46 @@ AccessModifier Modifier ReturnDataType MethodName(params DataType[] Parameter1, 
 }
 ```
 
+## Local Functions
+
+- "Local Functions" are functions, to do some small process, which is written inside a method.
+- Local functions are not part of the class; they can't be called directly through reference variable.
+- Local functions don't support "access modifiers" and "modifiers".
+- Local function support parameters, return.
+
+```cs
+public void MethodName(param1, param2)
+{
+    LocalFunctionName(); // calling the local function
+
+    ReturnDataType LocalFunctionName(param1, param2)
+    {
+        // Local Function Body
+    }
+}
+```
+
+## Static Local Functions
+
+- "Static Local Functions" are functions, same as normal "Local Functions".
+- Only the difference is, static local functions can't access local variables or parameters of containing method.
+- This is to avoid accidental access of local variables or parameters of containing method, inside the local function.
+- To access the local variables, pass in those as arguments to the static local functions.
+
+```cs
+public void MethodName(param1, param2)
+{
+    LocalFunctionName(); // calling the local function
+
+    static ReturnDataType LocalFunctionName(param1, param2)
+    {
+        // cant' access local variables or parameters of containing method
+    }
+}
+```
+
+## Recursion
+
 
 
 
