@@ -84,11 +84,19 @@
         return TotalNoProducts;
     }
 
+    // Static Method: Calculates Total Quantity
+    public static int GetTotalQuantity(Product product1, Product product2, Product product3)
+    {
+        int total;
+        total = product1.GetQuantityInStock() + product2.GetQuantityInStock() + product3.GetQuantityInStock();
+        return total;
+    }
+
 
     // Method
     // Cost <= 20000 then tax = 10%
     // Cost > 20000 then tax = 12.5%
-    public void CalculateTax()
+    public void CalculateTax(double percentage = 4.5)
     {
         // Create local variable
         double t;
@@ -99,7 +107,24 @@
             t = cost * 10 / 100;
         } else
         {
-            t = cost * 12.5 / 100;
+            t = cost * percentage / 100;
+        }
+        tax = t;
+    }
+
+    public void CalculateTax(double cost, double percentage)
+    {
+        // Create local variable
+        double t;
+
+        // Calculate Tax
+        if (this.cost <= 50000)
+        {
+            t = cost * 5 / 100;
+        }
+        else
+        {
+            t = cost * percentage / 100;
         }
         tax = t;
     }

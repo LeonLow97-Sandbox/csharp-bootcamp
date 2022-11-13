@@ -49,13 +49,13 @@
         Console.WriteLine();
 
         // Call Methods
-        product1.CalculateTax();
-        product2.CalculateTax();
-        product3.CalculateTax();
+        product1.CalculateTax(percentage:9.2);
+        product2.CalculateTax(7.4);
+        product3.CalculateTax(10000, 3.4);
 
         // Get values from fields
         Console.WriteLine("Developer Name: " + developerName);
-        int totalQuantity = product1.GetQuantityInStock() + product2.GetQuantityInStock() + product3.GetQuantityInStock();
+        int totalQuantity = Product.GetTotalQuantity(product1, product2, product3);
         Console.WriteLine("Total Quantity: " + totalQuantity);
         Console.WriteLine("Total no. of Products: " + Product.GetTotalNoOfProducts());
         Console.WriteLine("Category of Products: " + Product.CategoryName);
@@ -65,7 +65,6 @@
         Console.WriteLine("Tax of Product 1: " + product1.GetTax());
         Console.WriteLine("Tax of Product 2: " + product2.GetTax());
         Console.WriteLine("Tax of Product 3: " + product3.GetTax());
-
 
         Console.ReadKey();
     }
