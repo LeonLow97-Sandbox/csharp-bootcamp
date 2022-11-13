@@ -49,10 +49,16 @@
         Console.WriteLine();
 
         // Call Methods
-        product1.CalculateTax(percentage:9.2);
-        product2.CalculateTax(7.4);
-        product3.CalculateTax(10000, 3.4);
+        double q = 9.2;
+        product1.CalculateTax(percentage:in q);
 
+        // in
+        double p = 5.6;
+        product2.CalculateTax(in p);
+        Console.WriteLine("p is " + p);
+
+        product3.CalculateTax(10000, 3.4);
+        
         // Get values from fields
         Console.WriteLine("Developer Name: " + developerName);
         int totalQuantity = Product.GetTotalQuantity(product1, product2, product3);

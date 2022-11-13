@@ -165,6 +165,114 @@ MethodName(string, string, int)
     {
     }
 ```
+# Parameter Modifiers
+
+- Specifies how the parameter receives a value
+
+## Parameter Modifiers (`default`)
+
+- The "Argument" will be assigned into the "Parameter", but not reverse
+- Changes made to the parameter will not affect the argument variable
+    - Parameter and argument are stored in different stacks.
+- The default Parameter Modifier is `default`.
+
+## Parameter Modifiers (`ref`)
+
+- The "Argument" will be assigned into the "Parameter" and vice versa.
+- The Argument must be a variable and must be **pre-initialized**.
+
+```cs
+// In Main
+MethodName(ref Argument1, ...)
+
+// In Class
+MethodName(ref DataType Parameter1, ...)
+{
+    Parameter1 = value; // can modify the value of the argument in Main
+}
+```
+
+## Parameter Modifiers (`out`)
+
+- The "Argument" **will not be assigned** into the "Parameter" **but only reverse**.
+- The Argument must be a variable' The Argument **can be un-initialized**.
+- Used for real time projects where you want to return a specific value.
+
+```cs
+double Argument1
+MethodName(out Argument1, ...)
+
+// In C# 7.0, can declare variable directly while calling the method with 'out' parameter
+MethodName(out type Argument1, ...)
+product2.CalculateTax(out double p);
+```
+
+## Parameter Modifier (`in`)
+
+- The "Argument" will be assigned into the "Parameter", but the **parameter becomes readonly**.
+- Can't modify the value of parameter in the method; if you try to change, compile-time error will be shown.
+
+```cs
+// In Main
+MethodName(in Argument1, ...)
+
+// In Class
+AccessModifier Modifier ReturnDataType MethodName(in DataType Parameter1, ...)
+{
+    ...
+    Parameter1 = value; // error, can't change the value of parameter
+}
+```
+
+## `ref` returns
+
+- The reference of return variable will be assigned to receiving variable.
+
+```cs
+
+// In Class
+class Student
+{
+    // public field
+    public int grade = 2;
+
+    // public method with ref return
+    public ref int DoWork()
+    {
+        // return reference of 'grade' field
+        return ref grade;
+    }
+}
+
+// In Main
+    static void Main()
+    {
+        ref int g = ref s.DoWork();
+        g = 5;
+        s.PrintGrade(); // 5
+        Console.ReadKey();
+    }
+```
+
+## Parameter Modifiers(`params`)
+
+- All the set of arguments will be at a time received as an array into the parameter.
+- The "params" parameter modifier can be used only for the last parameter of the method; and can be used only once for 1 method.
+- Used when unsure of how many arguments will be received.
+
+```cs
+// In Main
+MethodName(Argument1, Argument2, Argument3, ...)
+
+// In Class
+AccessModifier Modifier ReturnDataType MethodName(params DataType[] Parameter1, ...)
+{
+    ....
+    Parameter1[index] // To access value based on index (can create for loop)
+}
+```
+
+
 
 
 
