@@ -312,6 +312,34 @@ public void MethodName(param1, param2)
 
 ## Recursion
 
+- Useful in mathematic computations, such as finding factorial of a number.
+
+```cs
+public double Factorial(int number)
+{
+    if (number == 0)
+    {
+        return 1;
+    } else
+    {
+        return number * Factorial(number - 1);
+    }
+}
+```
+
+## Summary
+
+- Method is a part of class, that contains collection of statements to do some process.
+- Access modifiers of Methods: private, protected, private protected, internal, protected internal, public.
+- Modifiers of Methods: static, virtual, abstract, override, new, partial, sealed.
+- For each method call, a new stack will be created; all local variables and parameters of the method will be stored in that stack; will be deleted automatically at the end of the method execution.
+- In instance methods, the `this` keyword refers to 'current' object, based on which the method is called.
+- Instance methods can access and manipulate instance fields & static fields; Static method can access only static fields.
+    - But static methods can create an object for the class; then access instance fields through that object.
+- Using named arguments, you can change order of parameters while calling the method.
+- Method overloading is 'writing multiple methods with same name in the same class with different set of parameters'.
+- The `ref` parameter is used to receive value into the method and also return some value back to the method caller; The `out` parameter is only used to return value back to the method caller; but not for receiving value into the method.
+
 
 
 
