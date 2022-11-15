@@ -3,16 +3,16 @@
 ## Creating Properties
 
 - Receive the incoming value; validate the value; assign value into field.
-    - Property = someValue;
-    - Is the value valid?
-        - If yes, assign value into field.
-        - If no, skip the value (don't store the value into field).
+  - Property = someValue;
+  - Is the value valid?
+    - If yes, assign value into field.
+    - If no, skip the value (don't store the value into field).
 - Property is a collection of 2 accessors (get-accessor and set-accessor).
 - Prefix `_` underscore indicates that it is a private field.
 
-|Get Accessor|Set Accessor|
-|:-:|:-:|
-|||
+| Get Accessor | Set Accessor |
+| :----------: | :----------: |
+|              |              |
 
 ```cs
 class Car
@@ -23,13 +23,13 @@ class Car
     public string CarBrand
     {
         // Validation & Initialization of Field
-        set 
+        set
         {
             this._carBrand = value;     // E.g., CarBrand = value
         }
 
         // Returning value of field
-        get 
+        get
         {
             return _carBrand;  // E.g., CarBrand
         }
@@ -39,5 +39,27 @@ class Car
 
 ### Features and Advantages of Properties
 
+|                            Readonly property                            |                         Write-only property                          |
+| :---------------------------------------------------------------------: | :------------------------------------------------------------------: |
+|                     Contains ONLY **get-accessor**                      |                    Contains ONLY **set-accessor**                    |
+| Reads & returns the value of field; but not modifies the value of field | Validates & assign incoming value into field; but not read the value |
 
+```cs
+// Readonly Property
+accessModifier type PropertyName
+{
+    get
+    {
+        return field;
+    }
+}
 
+// Write-only Property
+accessModifier type PropertyName
+{
+    set
+    {
+        field = value;
+    }
+}
+```
