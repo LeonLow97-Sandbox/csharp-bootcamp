@@ -111,5 +111,8 @@
         double t = Salary - _tax;
         return t;
     }
+
+    // automatic properties (auto creates private field _NativePlace)
+    public string NativePlace { get; set; }
 }
 

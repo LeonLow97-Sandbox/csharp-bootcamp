@@ -8,6 +8,7 @@
         emp1.EmpName = "Scott";
         emp1.Job = "Manager";
         emp1.Tax = 50;
+        emp1.NativePlace = "New Delhi";
         Employee emp2 = new Employee(102, "Leon");
         emp2.Job = "Software Engineer";
         Employee emp3 = new Employee(103, "Darrel", "Developer");
@@ -21,6 +22,7 @@
         Console.WriteLine(emp1.Job);
         Console.WriteLine(emp1.Salary);
         Console.WriteLine(emp1.CalculateNetSalary());
+        Console.WriteLine(emp1.NativePlace);
         Console.WriteLine();
 
         Console.WriteLine("-----emp2-----");
